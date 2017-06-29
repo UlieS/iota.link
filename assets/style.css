@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'unineue-light';
+  src: url('../fonts/unineue-light-webfont.woff2') format('woff2'),
+       url('../fonts/unineue-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'unineue-light';
+  font-size: 100%;
+  letter-spacing: 0.09em;
+}
+
+body {
+  background-color: rgb(4, 169, 151);
+  color: rgb(255, 255, 255);
+}
+
+main {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 9em;
+  width: 50vw;
+  min-width: 21em;
+  max-width: 1000px;
+  font-size: 1.5em;
+}
+
+.field {
+  margin-bottom: 1em;
+}
+
+.field,
+.field.amount .element {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.field label,
+.field.amount .element select {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: center;
+  margin-right: 1em;
+}
+
+.field .element,
+.field.amount .element input {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: center;
+}
+
+main input,
+main select {
+  height: 2em;
+  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: rgb(0, 104, 93);
+  border: none;
+  border-radius: 1px;
+}
+
+main input:focus,
+main select:focus {
+  outline: none;
+  box-shadow: 0px 0px 6px #444444;
+}
+
+main button:focus {
+  outline: none;
+  transform: scale(1.025);
+}
+
+main input::-webkit-input-placeholder { color: #BFEBE2; }
+main input::-moz-placeholder { color: #BFEBE2; }
+main input:-ms-input-placeholder { color: #BFEBE2; }
+main input:-moz-placeholder { color: #BFEBE2; }
+main input::placeholder { color: #BFEBE2; }
+
+main .actions {
+  margin-top: 1.5em;
+  text-align: right;
+}
+
+main .actions button {
+  margin-left: 1em;
+  padding: 0.5em 1em;
+  background-color: rgb(0, 104, 93);
+  color: rgb(255, 255, 255);
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+main .actions button:hover {
+  /*background-color: rgb(0, 131, 118);*/
+}
+
+main .actions button:disabled {
+  /*background-color: rgb(0, 104, 93);*/
+  opacity: 0.5;
+  cursor: initial;
+}
+
+main .actions button.success {
+  opacity: 1;
+  background-color: rgb(181, 229, 158);
+}
+
+#amount {
+  text-align: right;
+}
+
+#currency {
+  margin-left: 0.25em;
+  margin-right: 0;
+}
+
+#url {
+  display: none;
+}
+
+.field.tag {
+  display: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 1em;
+  height: 1em;
+  width: 100%;
+  padding: 0 1em;
+  font-size: 0.8em;
+}
+
+footer,
+footer a {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+footer .donate {
+  float: right;
+}
+
+footer .info {
+  float: left;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}

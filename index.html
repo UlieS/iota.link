@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>IOTA.link</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#04a997">
+  <meta name="apple-mobile-web-app-title" content="IOTA link">
+  <meta name="application-name" content="IOTA link">
+  <meta name="theme-color" content="#04a997">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<main>
+  <div class="field amount">
+    <label for="amount">Transfer</label>
+    <div class="element">
+      <input type="number" min="0" placeholder="amount" id="amount">
+      <select name="currency" id="currency">
+        <option value="i">i</option>
+        <option value="Ki">Ki</option>
+        <option value="Mi">Mi</option>
+        <option value="Gi">Gi</option>
+        <option value="Ti">Ti</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="field address">
+    <label for="address">To</label>
+    <input type="text" placeholder="address" id="address" class="element">
+  </div>
+
+  <div class="field tag">
+    <label for="tag">Tagged with</label>
+    <input type="text" placeholder="tag" id="tag" class="element">
+  </div>
+
+  <div class="actions">
+    <button type="submit" id="copy" class="hidden invisible">Copy link</button>
+    <button type="submit" id="open">Open in wallet</button>
+  </div>
+</main>
+
+<footer>
+  <p class="info"><a href="https://github.com/joakim/iota.link">About this service</a> • <a href="http://learn.iota.org/faqs">What is IOTA?</a></p>
+  <p class="donate">If you found this service useful, you're welcome to <a href="https://iota.link/9LHGWINWAYTSCA9TOIHYHFGSPSVZWWRIWYTDJAGYEQCFRLNGRBPNLGPIGYDYKMX9MQ9JJIJXQRQCSULRQCKTEVCOKG">donate some iotas</a>.</p>
+</footer>
+
+<script src="/assets/clipboard.min.js"></script>
+<script src="/assets/code.js"></script>
+
+</body>
+</html>
