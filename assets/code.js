@@ -126,7 +126,7 @@
 
   // Initiate.
   function init () {
-    var state = importState(location.search)
+    var state = importState(location.pathname.substr(1))
 
     updateState(state)
 
