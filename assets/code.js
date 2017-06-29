@@ -33,18 +33,14 @@
   }
 
   // Imports state from a query string.
-  function importState (str) {
-    var query = str ? queryDecode(str) : {}
+  function importState (path) {
+    var parts = path.split('/')
 
-    // Prefer data from the path parameter if it is provided
-    if (query.path) {
-      var path = query.path.split('/')
-      query = {
-        address: path[0],
-        amount: path[1],
-        currency: undefined,
-        tag: path[2],
-      }
+    var query = {
+      address: parts[0],
+      amount: parts[1],
+      currency: undefined,
+      tag: parts[2],
     }
 
     // Extract amount and currency from the "amount" parameter
