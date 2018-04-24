@@ -53,7 +53,7 @@
     var state = {
       address  : query.address  || '',
       amount   : query.amount   || '',
-      currency : query.currency || 'i',
+      currency : query.currency || 'Mi',
       tag      : query.tag      || '',
     }
 
